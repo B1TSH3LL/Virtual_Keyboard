@@ -17,7 +17,7 @@ body {
   margin-top: 5%;
 }
 .text_area {
-  width: 60vh;
+  width: 69.5%;
   height: 40vh;
   color: #08ff00;
   background: linear-gradient(0deg, black, rgb(44, 43, 43));
@@ -106,7 +106,7 @@ body {
     #099fff
   );
   background-size: 400%;
-  width: 61vh;
+  width: 70%;
   height: 41vh;
   z-index: -1;
   animation: animate 20s linear infinite;

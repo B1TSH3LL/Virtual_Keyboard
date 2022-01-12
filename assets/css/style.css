@@ -4,25 +4,25 @@ body {
   background-color: black;
 }
 .heading {
+  font-size: 3vh;
   text-align: center;
   color: #555555;
 }
-.text_area {
-  margin: auto;
-  margin-top: 1%;
+.glow {
+  display: flex;
   position: relative;
-  left: 25%;
-  width: 800px;
-  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text_area {
+  width: 40vh;
+  height: 25vh;
   color: #08ff00;
   background: linear-gradient(0deg, black, rgb(44, 43, 43));
   resize: none;
 }
-.glow {
-  position: relative;
-  margin-top: -20.1%;
-  left: 25.1%;
-}
+
 .keyboard {
   position: fixed;
   left: 0;
@@ -92,8 +92,6 @@ body {
 .glow::after {
   content: "";
   position: absolute;
-  left: -2px;
-  top: -2px;
   background: linear-gradient(
     45deg,
     #e6fb84,
@@ -107,11 +105,12 @@ body {
     #099fff
   );
   background-size: 400%;
-  width: 808px;
-  height: 307px;
+  width: 60vh;
+  height: 40vh;
   z-index: -1;
   animation: animate 20s linear infinite;
 }
+
 @keyframes animate {
   0% {
     background-position: 0 0;

@@ -1,17 +1,19 @@
 body {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   background-color: black;
+  margin-left: auto;
+  margin-right: auto;
 }
 .heading {
   text-align: center;
   color: #555555;
 }
 .text_area {
-  margin: auto;
   margin-top: 1%;
   position: relative;
-  left: 25%;
   width: 800px;
   height: 300px;
   color: #08ff00;
@@ -20,19 +22,23 @@ body {
 }
 .glow {
   position: relative;
-  margin-top: -20.1%;
-  left: 25.1%;
+  margin-top: -35.1%;
+  left: .1%;
 }
 .keyboard {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 80%;
   padding: 5px 0;
   background: transparent;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   user-select: none;
   transition: bottom 0.4s;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 320px;
+  margin-bottom: auto;
 }
 .keyboard--hidden {
   bottom: -100%;
@@ -127,3 +133,9 @@ body {
   filter: blur(100px);
   opacity: 0.5;
 }
+
+.disp {
+  margin-left: auto;
+  margin-right: auto;
+}
+
